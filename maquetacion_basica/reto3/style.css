@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #ece2c6;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav{
+    width: 100%;
+    background-color: #333333;
+    height: 40px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+#nav ul{
+    list-style: none;
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nav > ul > li{
+    border-right:1px silver solid;
+    line-height: 40px;
+    transition: all 300ms;
+}
+
+#nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 100px;
+}
+
+#nav > ul > li:nth-child(1){
+    border-left:1px silver solid;
+}
+
+#nav > ul > li:hover{
+    background-color: #70b231;
+}
+
+.title{
+    width: 70%;
+    height: auto;
+    border: 3px solid #333333;
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    background-color: #70b231;
+    color: seashell;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #333333;
+}
+
+
+
+/****************   Felinos      ********************/
+
+
+.div-felinos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.div-felinos__g1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div-felinos__g2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+/****************   Marinos      ********************/
+
+.div-marinos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.div-marinos__g1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div-marinos__g2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+/****************   Aves      ********************/
+
+.div-aves{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.div-aves__g1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.div-aves__g2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+
