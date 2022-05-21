@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #fff; */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.header{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.div__header{
+    width: 100%;
+    height: 80px;
+    background-color: #f31;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div__header--logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.div__header--logo h1{
+    margin-right: 10px;
+}
+
+.div__header--info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.div__header--info p,
+.div__header--info a{
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 80px;
+}
+
+.div__menu{
+    width: 100%;
+    height: 50px;
+    background-color: #eff6fb;
+}
+
+#nav > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#nav > ul > li > a{
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    line-height: 50px;
+    transition: all 300ms;
+}
+
+#nav > ul > li > a:hover{
+    background-color: #015497;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    padding-bottom: 30px;
+}
+
+.div__descripcion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.div__descripcion--img{
+    width: 100%;
+    height: 400px;
+    padding-left: 50px;
+
+    background-image: url(imgs/palmeras.jpg);
+    background-position: center center  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.h1__img{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+}
+
+.h2__img--group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.h2__img--group > h2{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.div__ofertas{
+    width: 90%;
+    margin-top: 40px;
+}
+
+.div__ofertas--destinos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.ofertas__destinos--f1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.f1__destino1{
+    width: 30%;
+    height: 180px;
+    padding: 10px;
+    padding-right: 0;
+
+    background-image: url(imgs/mauricio.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #888;
+
+    display: flex;
+}
+
+.f1__destino2{
+    width: 38%;
+    height: 180px;
+    padding: 10px;
+    padding-right: 0;
+
+    background-image: url(imgs/punta-cana.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #888;
+
+    display: flex;
+}
+
+.f1__destino3{
+    width: 30%;
+    height: 180px;
+    padding: 10px;
+    padding-right: 0;
+
+    background-image: url(imgs/Mexico-Riviera-Maya.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #888;
+
+    display: flex;
+}
+
+.desc__destino{
+    width: 70%;
+    text-shadow: 2px 2px 4px #333, 2px 2px 4px #333;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+}
+
+.destino__precio{
+    width: 30%;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;                                                                               ;
+}
+
+.precio{
+    width: 70%;
+    height: 100%;
+    background-color: #00589f;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.ir{
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.ir span{
+    color: #00589f;
+    text-align: center;
+    line-height: 40px;
+    
+}
+
+.ofertas__destinos--f2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.f2__destino1{
+    width: 38%;
+    height: 180px;
+    padding: 10px;
+    padding-right: 0;
+
+    background-image: url(imgs/estambul.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #888;
+
+    display: flex;
+}
+
+.f2__destino2{
+    width: 30%;
+    height: 180px;
+    padding: 10px;
+    padding-right: 0;
+
+    background-image: url(imgs/egipto.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #888;
+
+    display: flex;
+}
+
+.f2__destino3{
+    width: 30%;
+    height: 180px;
+    padding: 10px;
+    padding-right: 0;
+
+    background-image: url(imgs/marruecos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #888;
+
+    display: flex;
+}
+
+
+.ofertas__destinos--f3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.f3__destino1{
+    width: 30%;
+    height: 180px;
+    padding: 10px;
+    padding-right: 0;
+
+    background-image: url(imgs/singapore-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #888;
+
+    display: flex;
+}
+
+.f3__destino2{
+    width: 30%;
+    height: 180px;
+    padding: 10px;
+    padding-right: 0;
+
+    background-image: url(imgs/shanghai.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #888;
+
+    display: flex;
+}
+
+.f3__destino3{
+    width: 38%;
+    height: 180px;
+    padding: 10px;
+    padding-right: 0;
+
+    background-image: url(imgs/tokio.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #888;
+
+    display: flex;
+}
+
+.div__form{
+    width: 90%;
+    background-color: #015497;
+    background: linear-gradient(135deg, #015497, #4ebfed);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-content: flex-start; */
+
+    padding: 15px 10px;
+}
+
+.div__inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div__inputs input[type=text],
+.div__inputs input[type=date],
+.div__inputs input[type=number]{
+    width: 180px;
+    height: 20px;
+    padding: 15px 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.div__btns{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#btnInfo{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btn-filtrar{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+

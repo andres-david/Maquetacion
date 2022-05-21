@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <title>Indigo Travel</title>
+</head>
+<body>
+
+    <header class="header">
+
+        <div class="div__header">
+
+            <div class="div__header--logo">
+
+                <h1>INDIGO</h1>
+
+                <h1>Travel</h1>
+
+            </div>
+    
+            <div class="div__header--info">
+
+                <p>
+                    900-00-00-00
+                </p>
+
+                <a href="#">Agencias de Viajes</a>
+
+                <a href="#"><span class="icon">?</span> Origen</a>
+
+                <a href="#"><span class="icon">U</span> Mi Cuenta</a>
+    
+            </div>
+
+        </div>
+
+        <div class="div__menu">
+
+            <nav id="nav">
+
+                <ul>
+                    <li>
+                        <a href="#">Hoteles</a>
+                    </li>
+                    <li>
+                        <a href="#">Vuelos</a>
+                    </li>
+                    <li>
+                        <a href="#">Caribe</a>
+                    </li>
+                    <li>
+                        <a href="#">Islas</a>
+                    </li>
+                    <li>
+                        <a href="#">Cruceros</a>
+                    </li>
+                    <li>
+                        <a href="#">Ofertas</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <div class="div__descripcion">
+
+            <div class="div__descripcion--img">
+
+                <h1 class="h1__img">
+                    ¿Quieres algo que contar?
+                </h1>
+
+                <div class="h2__img--group">
+
+                    <h2>
+                        Las vueltas dan mucha vida
+                    </h2>
+
+                    <h2>
+                        Icluso cuando has vuelto
+                    </h2>
+
+
+                </div>
+
+            </div>
+
+            <div class="div__descripcion--decripcion">
+
+
+            </div>
+
+
+        </div>
+
+        <div class="div__form">
+
+            <form id="form">
+
+                <div class="div__inputs">
+
+                    <input type="text" id="nombre" placeholder="Nombre">
+
+                    <input type="text" id="origen" placeholder="Origen">
+
+                    <input type="text" id="destino" placeholder="Destino">
+
+                    <input type="number" id="nPersonas" placeholder="Personas" max="10" min="1">
+                        
+                    <input type="text" id="fechaEntrada" placeholder="Entrada" onfocus="(this.type='date')">
+
+                    <input type="text" id="fechaSalida" placeholder="Salida" onfocus="(this.type='date')">
+
+                </div>
+
+                <div class="div__btns">
+
+                    <button type="button" id="btnInfo">
+                        Solicitar Información
+                    </button>
+    
+                    <button type="button" id="btn-filtrar">
+                        Filtrar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="div__ofertas">
+
+            <div class="div__ofertas--titulo">
+
+                <h2>
+                    Descubre las mejores ofertas
+                </h2>
+
+            </div>
+
+            <div class="div__ofertas--destinos">
+
+                <div class="ofertas__destinos--f1">
+
+                    <div class="f1__destino1">
+                        <h3 class="desc__destino">
+                            Isla Mauricio
+                        </h3>
+
+                        <div class="destino__precio">
+
+                            <div class="precio">
+                                850 €
+                            </div>
+                            <div class="ir">
+                                <span class="icon">
+                                    j
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="f1__destino2">
+                        <h3 class="desc__destino">
+                            Punta Cana
+                        </h3>
+
+                        <div class="destino__precio">
+
+                            <div class="precio">
+                                700 €
+                            </div>
+                            <div class="ir">
+                                <span class="icon">
+                                    j
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="f1__destino3">
+                        <h3 class="desc__destino">
+                            Rivera Maya
+                        </h3>
+
+                        <div class="destino__precio">
+
+                            <div class="precio">
+                                800 €
+                            </div>
+                            <div class="ir">
+                                <span class="icon">
+                                    j
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ofertas__destinos--f2">
+
+                    <div class="f2__destino1">
+                        <h3 class="desc__destino">
+                            Estambul
+                        </h3>
+
+                        <div class="destino__precio">
+
+                            <div class="precio">
+                                680 €
+                            </div>
+                            <div class="ir">
+                                <span class="icon">
+                                    j
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="f2__destino2">
+                        <h3 class="desc__destino">
+                            Egipto
+                        </h3>
+
+                        <div class="destino__precio">
+
+                            <div class="precio">
+                                650 €
+                            </div>
+                            <div class="ir">
+                                <span class="icon">
+                                    j
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="f2__destino3">
+                        <h3 class="desc__destino">
+                            Marruecos
+                        </h3>
+
+                        <div class="destino__precio">
+
+                            <div class="precio">
+                                600 €
+                            </div>
+                            <div class="ir">
+                                <span class="icon">
+                                    j
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ofertas__destinos--f3">
+
+                    <div class="f3__destino1">
+                        <h3 class="desc__destino">
+                            Singapur
+                        </h3>
+
+                        <div class="destino__precio">
+
+                            <div class="precio">
+                                1000 €
+                            </div>
+                            <div class="ir">
+                                <span class="icon">
+                                    j
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="f3__destino2">
+                        <h3 class="desc__destino">
+                            Shanghai
+                        </h3>
+                        <div class="destino__precio">
+
+                            <div class="precio">
+                                1200 €
+                            </div>
+                            <div class="ir">
+                                <span class="icon">
+                                    j
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="f3__destino3">
+                        <h3 class="desc__destino">
+                            Tokio
+                        </h3>
+                        <div class="destino__precio">
+
+                            <div class="precio">
+                                1100 €
+                            </div>
+                            <div class="ir">
+                                <span class="icon">
+                                    j
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+    </main>
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
