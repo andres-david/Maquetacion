@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* color: #fff; */
+    font-family: sans-serif;
 }
 
 body{
@@ -12,6 +12,11 @@ body{
 
 a{
     text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, p{
+    color: #fff;
 }
 
 li{
@@ -43,6 +48,11 @@ li{
     padding: 0 10px;
 }
 
+.div__header--logo > h1{
+    text-shadow: 2px 1px 2px #333;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
 
 .div__header--logo h1{
     margin-right: 10px;
@@ -52,7 +62,7 @@ li{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 10px;
+    padding-left: 10px;
 }
 
 .div__header--info p,
@@ -61,6 +71,12 @@ li{
     padding-left: 20px;
     padding-right: 20px;
     line-height: 80px;
+    transition: all 300ms;
+}
+
+.div__header--info a:hover{
+    text-decoration: underline;
+    background-color: #f11474;
 }
 
 .div__menu{
@@ -80,11 +96,14 @@ li{
     height: 50px;
     padding: 0 30px;
     line-height: 50px;
+    color: #555;
+    /* font-weight: bolder; */
     transition: all 300ms;
 }
 
 #nav > ul > li > a:hover{
     background-color: #015497;
+    color: #fff;
 }
 
 .main{
@@ -117,6 +136,11 @@ li{
     justify-content: center;
 }
 
+.div__descripcion--img h1,
+.div__descripcion--img h2{
+    text-shadow: 2px 2px 2px #333;
+}
+
 .h1__img{
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
@@ -132,9 +156,27 @@ li{
     font-family: 'Gloria Hallelujah', cursive;
 }
 
+.div__descripcion--decripcion{
+    width: 90%;
+    margin-top: 30px;
+}
+
+.div__descripcion--decripcion h2,
+.div__descripcion--decripcion p{
+    color: #333;
+}
+
+.div__descripcion--decripcion p{
+    margin-top: 10px;
+}
+
 .div__ofertas{
     width: 90%;
     margin-top: 40px;
+}
+
+.div__ofertas--titulo h2{
+    color: #333;
 }
 
 .div__ofertas--destinos{
@@ -201,6 +243,7 @@ li{
 
 .desc__destino{
     width: 70%;
+    color: #fff;
     text-shadow: 2px 2px 4px #333, 2px 2px 4px #333;
     font-size: 22px;
     display: flex;
@@ -230,12 +273,13 @@ li{
     height: 100%;
     background-color: #fff;
     text-align: center;
-}
-
-.ir span{
     color: #00589f;
     text-align: center;
     line-height: 40px;
+}
+
+.ir span{
+    
     
 }
 
@@ -356,6 +400,7 @@ li{
     background: linear-gradient(135deg, #015497, #4ebfed);
     border-radius: 5px;
     margin-top: 30px;
+    box-shadow: 2px 2px 8px 2px #888;
 }
 
 #form{
@@ -397,6 +442,14 @@ li{
     height: 30px;
     border-radius: 5px;
     border: none;
+    background-color: #f31;
+    color: #fff;
+    transition: all 300ms;
+}
+
+#btnInfo:hover{
+    cursor: pointer;
+    background-color: #f11474;
 }
 
 #btn-filtrar{
@@ -404,6 +457,43 @@ li{
     height: 30px;
     border-radius: 5px;
     border: none;
+    background-color: #f31;
+    color: #fff;
+    transition: all 300ms;
+}
+
+#btn-filtrar:hover{
+    cursor: pointer;
+    background-color: #f11474;
+}
+
+#footer{
+    width: 100%;
+    height: 90px;
+    background: #f31;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h2{
+    text-align: center;
+    /* line-height: 80px; */
+    text-shadow: 2px 1px 2px #333;
+    letter-spacing: 2px;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.socialMedia a{
+    padding: 0 8px;
+    font-size: 25px;
 }
 
 

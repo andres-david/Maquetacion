@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +15,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="fonts/css/all.min.css">
+
+    <!-- CSS -->
+
     <link rel="stylesheet" href="index.css">
     <title>Indigo Travel</title>
 </head>
+
 <body>
 
     <header class="header">
@@ -30,19 +42,19 @@
                 <h1>Travel</h1>
 
             </div>
-    
+
             <div class="div__header--info">
 
                 <p>
-                    900-00-00-00
+                    <i class="fa-solid fa-phone"></i> 900-00-00-00
                 </p>
 
-                <a href="#">Agencias de Viajes</a>
+                <a href="#"><i class="fa-solid fa-shop"></i> Agencias de Viajes</a>
 
-                <a href="#"><span class="icon">?</span> Origen</a>
+                <a href="#"><i class="fa-solid fa-location-dot"></i> Origen</a>
 
-                <a href="#"><span class="icon">U</span> Mi Cuenta</a>
-    
+                <a href="#"><i class="fa-solid fa-user"></i> Mi Cuenta</a>
+
             </div>
 
         </div>
@@ -104,11 +116,21 @@
 
             </div>
 
-            <div class="div__descripcion--decripcion">
+        </div>
 
+        <div class="div__descripcion--decripcion">
 
-            </div>
+            <h2>
+                Indigo Viajes
+            </h2>
 
+            <p>
+                Encuentra los mejores precios y ofertas en los destinos más increíbles tanto a nivel nacional, como a
+                nivel internacional, y presume de unas vacaciones de lujo este año. Echa un vistazo a todos nuestros
+                viajes, cruceros y circuitos y llévate a los tuyos a pasar unas jornadas estivales irrepetibles con
+                Indigo Viajes. Reserva ya tu plaza con nosotros y no te arrepentirás del fantástico viaje que está a
+                punto de empezar.
+            </p>
 
         </div>
 
@@ -125,7 +147,7 @@
                     <input type="text" id="destino" placeholder="Destino">
 
                     <input type="number" id="nPersonas" placeholder="Personas" max="10" min="1">
-                        
+
                     <input type="text" id="fechaEntrada" placeholder="Entrada" onfocus="(this.type='date')">
 
                     <input type="text" id="fechaSalida" placeholder="Salida" onfocus="(this.type='date')">
@@ -137,7 +159,7 @@
                     <button type="button" id="btnInfo">
                         Solicitar Información
                     </button>
-    
+
                     <button type="button" id="btn-filtrar">
                         Filtrar
                     </button>
@@ -173,9 +195,7 @@
                                 850 €
                             </div>
                             <div class="ir">
-                                <span class="icon">
-                                    j
-                                </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
 
                         </div>
@@ -193,9 +213,7 @@
                                 700 €
                             </div>
                             <div class="ir">
-                                <span class="icon">
-                                    j
-                                </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
 
                         </div>
@@ -212,9 +230,7 @@
                                 800 €
                             </div>
                             <div class="ir">
-                                <span class="icon">
-                                    j
-                                </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
 
                         </div>
@@ -235,9 +251,7 @@
                                 680 €
                             </div>
                             <div class="ir">
-                                <span class="icon">
-                                    j
-                                </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
 
                         </div>
@@ -255,9 +269,7 @@
                                 650 €
                             </div>
                             <div class="ir">
-                                <span class="icon">
-                                    j
-                                </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
 
                         </div>
@@ -275,9 +287,7 @@
                                 600 €
                             </div>
                             <div class="ir">
-                                <span class="icon">
-                                    j
-                                </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
 
                         </div>
@@ -298,9 +308,7 @@
                                 1000 €
                             </div>
                             <div class="ir">
-                                <span class="icon">
-                                    j
-                                </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
 
                         </div>
@@ -316,9 +324,7 @@
                                 1200 €
                             </div>
                             <div class="ir">
-                                <span class="icon">
-                                    j
-                                </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
 
                         </div>
@@ -334,9 +340,7 @@
                                 1100 €
                             </div>
                             <div class="ir">
-                                <span class="icon">
-                                    j
-                                </span>
+                                <i class="fa-solid fa-arrow-right"></i>
                             </div>
 
                         </div>
@@ -355,9 +359,28 @@
 
     </main>
 
+    <footer id="footer">
+
+        <h2>INDIGO Travel </h2>
+
+        <div class="socialMedia">
+
+            <a href="#"><i class="fa-brands fa-instagram"></i>  </a>
+
+            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+            <a href="#"><i class="fa-brands fa-pinterest-square"></i></a>
+
+        </div>
+
+    </footer>
+
 
 
     <script src="main.js"></script>
-    
+
 </body>
+
 </html>
