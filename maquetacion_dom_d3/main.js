@@ -40,6 +40,8 @@ function crearCliente(){
 
 let filtrar = () =>{
 
+    console.log(dataUsers);
+
     if( dataUsers.length > 0 ){
 
         for( let i = 0; i < dataUsers.length; i++ ){
@@ -54,23 +56,19 @@ let filtrar = () =>{
                 }
 
                 let div = document.createElement('div');
-                div.classList.add('lista')
-    
-                let h3 = document.createElement('h3');        
-                h3.innerText = `Usuario ${i+1}`;
-    
-                div.append( h3 );
+                div.classList.add('lista');
         
                 for( let key in dataUsers[i] ){
                     let p = document.createElement('p');
                     p.innerText = `${key}: ${dataUsers[i][key]}`;
                     div.append( p );
                 }
-    
+                
                 listGroup.append( div );
-
+            
             }
-    
+
+            
         }
 
     }
