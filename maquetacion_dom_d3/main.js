@@ -1,12 +1,12 @@
 
 let btnInfo    = document.querySelector('#btnInfo');
 let btnFiltrar = document.querySelector('#btn-filtrar');
-let form = document.querySelector('#form');
+let form       = document.querySelector('#form');
+let listGroup  = document.querySelector('#list-group');
+// let main       = document.querySelector('.main');
 
 
 function crearCliente(){
-    
-    console.log('Hola');
     
     let persona = {
         
@@ -40,19 +40,37 @@ function crearCliente(){
 
 let filtrar = () =>{
 
-    console.log('hola');
+    if( dataUsers.length > 0 ){
 
-    for( let i = 0; i < dataUsers.length; i++ ){
+        for( let i = 0; i < dataUsers.length; i++ ){
+    
+            if(dataUsers[i]['destino'] === 'canarias' || dataUsers[i]['destino'] === 'mayorca' 
+            || dataUsers[i]['destino'] === 'galicia'){
+    
+                for( let key in dataUsers[i] ){
+    
+                    console.log(`${key}: ${dataUsers[i][key]}`);
+    
+                }
 
-        if(dataUsers[i]['destino'] === 'canarias' || dataUsers[i]['destino'] === 'mayorca' 
-        || dataUsers[i]['destino'] === 'galicia'){
-
-            for( let key in dataUsers[i] ){
-
-                console.log(`${key}: ${dataUsers[i][key]}`);
+                let div = document.createElement('div');
+                div.classList.add('lista')
+    
+                let h3 = document.createElement('h3');        
+                h3.innerText = `Usuario ${i+1}`;
+    
+                div.append( h3 );
+        
+                for( let key in dataUsers[i] ){
+                    let p = document.createElement('p');
+                    p.innerText = `${key}: ${dataUsers[i][key]}`;
+                    div.append( p );
+                }
+    
+                listGroup.append( div );
 
             }
-
+    
         }
 
     }
