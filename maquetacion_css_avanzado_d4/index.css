@@ -2,19 +2,28 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    background-color: #18191a;
 }
 
 a{
     text-decoration: none;
+    color: #B0B3B8;
 }
 
 li{
     list-style: none;
 }
 
-#main{
-    width: 100vw;
-    height: 100vh;
+#container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #header{
@@ -22,12 +31,36 @@ li{
     height: 80px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #242526;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 }
+
+.title h2{
+    color: #B0B3B8;;
+    letter-spacing: 2px;
+}
+
+.disco{
+    animation-name: rotate-disco;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-disco {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+
+}    
 
 .menu{
     display: flex;
@@ -36,7 +69,7 @@ li{
 }
 
 .menu li{
-    width: 110px;
+    width: 135px;
     height: 40px;
     text-align: center;
 }
@@ -45,5 +78,414 @@ li{
     display: block;
     width: 100%;
     line-height: 40px;
-    background-color: teal;
+    transition: all 300ms;
+}
+
+.menu a:hover{ 
+    background-color: #4b4d4e;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+
+#main{
+    width: 90%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background: #18191a;
+    margin-bottom: 50px;
+}
+
+main > h1{
+    color: #B0B3B8;
+}
+
+.div__v1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.div__img{
+    width: 30%;
+    height: 420px;
+    border-radius: 50%;
+    
+    background-image: url(imgs/developer.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    animation: blink 8s infinite linear;
+}
+
+@keyframes blink {
+    0%{
+        border: 5px #37bcf9 solid;
+    }
+    25%{
+        border: 5px green solid;
+    }
+    50%{
+        border: 5px yellow solid;
+    }
+    75%{
+        border: 5px rgb(237, 13, 13) solid;
+    }
+    100%{
+        border: 5px #37bcf9 solid;
+    }
+}
+
+.div__img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.div__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin-left: 10%;
+    text-align: center;
+}
+
+.div__title h1{
+    font-size: 35px;
+    color: #B0B3B8;
+    margin-bottom: 10px;
+}
+
+.div__title h2{
+    font-size: 30px;
+    color: #B0B3B8;
+}
+
+.div__2{
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+
+.div__2 p{
+    color: #B0B3B8;
+    letter-spacing: 1px;
+}
+
+#footer{
+    width: 100%;
+    height: 80px;
+    background-color: #242526;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer h2{
+    color: #B0B3B8;
+    letter-spacing: 2px;
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.media a{
+    font-size: 28px;
+    margin: 5px;
+    transition: all 300ms;
+}
+
+.media a:hover{
+    color: #2D88FF;
+}
+
+
+/****************       Descripción       ********************/
+
+.main-descripcion{
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main-descripcion h1{
+    font-size: 45px;
+    color: #B0B3B8;
+}
+
+.main-descripcion h2{
+    font-size: 35px;
+    margin-top: 25px;
+    color: #B0B3B8;
+}
+
+.main-descripcion p{
+    font-size: 20px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    color: #B0B3B8;
+}
+
+
+
+#footer-descripcion{
+    width: 100%;
+    height: 80px;
+    background-color: #242526;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: auto;
+}
+
+#footer-descripcion h2{
+    color: #B0B3B8;
+}
+
+
+/***********     Tecnologias      *************/
+
+.main-tecnologias{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.main-tecnologias h1{
+    text-align: center;
+    color: #B0B3B8;
+    margin-bottom: 20px;
+}
+
+.div__tecnologias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tecnologias__g2{
+    margin-left: 30%;
+}
+
+.html,
+.css-3,
+.js,
+.angular,
+.bootstrap,
+.node-js{
+    width: 80px;
+    margin-top: 20px;
+    display: flex;    
+    flex-direction: row;
+    align-items: center;
+}
+
+.html i,
+.css-3 i,
+.js i,
+.angular i,
+.bootstrap i,
+.node-js i{
+    font-size: 70px;
+    color: #B0B3B8;
+}
+
+.overlay{
+    display: block;
+    width: 135px;
+    height: 40px;
+    color: #B0B3B8;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 3px #ccc;
+    background-color: #4b4d4e;
+    position: absolute;
+    margin-left: 120px;
+    transform: translateX(-90%);
+    opacity: 0; 
+    transition: all 300ms;
+}
+
+.html:hover .overlay,
+.css-3:hover .overlay,
+.js:hover .overlay,
+.angular:hover .overlay,
+.bootstrap:hover .overlay,
+.node-js:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+#footer-tecnologias{
+    width: 100%;
+    height: 80px;
+    background-color: #242526;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: auto;
+}
+
+
+/***********  Contacto   ************/
+
+.main-contacto{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-contacto{
+    width: 50%;
+    margin-top: 30px;
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;  
+}
+
+#form input[type=text]{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #242526;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #B0B3B8;
+    color: #fff;
+}
+
+#form textarea{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #242526;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border-bottom: 1px solid #B0B3B8;
+    color: #fff;
+}
+
+.terminos{
+    color: #B0B3B8;
+}
+
+.btn__form a{
+    display: block;
+    width: 40%;
+    padding: 10px 40px;
+    margin-top: 20px;
+    background-color: #242526;
+    text-decoration: none;
+    color: #B0B3B8;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 500ms;
+}
+
+.btn__form a:hover{
+    color: #242526;
+    background-color: #B0B3B8;
+}
+
+/**************  Proyectos   ***************/
+
+.main-proyectos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-proyectos h1{
+    text-align: center;
+    color: #B0B3B8;
+}
+
+.proyectos__f1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.proyecto{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;        
+}
+
+.proyecto img{
+    width: 100%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #B0B3B8;
+    transition: all 500ms;
+}
+
+.proyecto img:hover{
+    transform: scale(1.05);
+}
+
+
+
+.proyecto p{
+    text-align: center;
+    margin-top: 10px;
+    color: #B0B3B8;
+}
+
+#footer-proyectos{
+    width: 100%;
+    height: 80px;
+    background-color: #242526;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+footer h2{
+    color: #B0B3B8;
 }
