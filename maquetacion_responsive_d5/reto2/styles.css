@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.div__header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.header{
+    width: 75%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.header__title h2{
+    font-family: 'Pacifico', cursive;
+}
+
+.browser{
+    position: relative;
+}
+
+.browser input[type = text]{
+    background-color: #efefef;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 8px 10px 8px 33px;
+    font-size: 15px;
+}
+
+.browser input[type = text]::placeholder{
+    color: #979797;
+}
+
+.icon-browser{
+    display: block;
+    font-size: 14px;
+    color: #979797;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btns{
+    width: 22%;
+    height: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-login{
+    padding: 6px 12px;
+    background-color: #0095f6;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.btn-register{
+    padding: 6px 12px;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #0095f6;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.div-info{
+    width: 75%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.div__logo{
+    width: 25%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.div__logo img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.div__description{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.description__title{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.description__title h1{
+    margin-right: 6%;
+}
+
+.description__title a{
+    padding: 6px 12px;
+    background-color: #0095f6;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 6%;
+}
+
+.description__followers{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.description__followers p{
+    margin-right: 5%;
+    margin-top: 3px;
+}
+
+.description__description{
+    margin-top: 30px;
+}
+
+.description__description p{
+    margin-top: 5px;
+}
+
+.description__description a{
+    display: block;
+    margin-top: 5px;
+}
+
+
+.div__historias{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.historia{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div__general{
+    width: 100%;
+    height: 90px;
+    border-radius: 100%;
+    background-color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__general i{
+    font-size: 30px;
+    color: #fff;
+}
+
+.historia p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.publications{
+    width: 75%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__publications{
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border-top: 1px solid #dbdbdb;
+}
+
+.publication{
+    display: flex;
+    flex-direction: row;
+}
+
+.publication i{
+    font-size: 14px;
+    margin-right: 8px;
+    color: #979797;
+}
+
+.publication p{
+    font-size: 14px;
+    color: #979797;
+}
+
+.body__publications{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.div__images{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.div__images img{
+    width: 32%;
+    height: 250px;
+}
+
+
